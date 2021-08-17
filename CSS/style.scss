@@ -115,7 +115,6 @@ main {
     flex-direction: column;
     background: var(--bs-sun);
     padding: 25px 15px;
-    width:60%;
     display: flex;
     margin: 2vh auto;
 
@@ -248,11 +247,137 @@ footer{
     }
 }
 
+// PAGE EVENEMENTS // 
+
+.event-main { 
+    background: url(/IMG/welcome.jpg)center/cover;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    h1 { 
+        color: white ;
+        margin-top: 5vh;
+        @include flexCentered()
+    }
+    section { 
+        margin-top: 15vh;
+    }
+    footer { 
+        position: static;
+        bottom: 0;
+    }
+}
+
+
+.articles { 
+    @include radius(); 
+    background:var(--bs-sun) ; 
+    margin: 3vh auto ;
+    max-width :90%; 
+
+    h2 { 
+        @include flexCentered(); 
+        margin-top: 5vh;
+        @include dancingScript(); 
+        text-align: center;
+    }
+    img { 
+        width: 70%; 
+        @include radius(); 
+        display: flex ;
+        margin: 3vh auto;
+    }
+    .help {
+        width: 60%; 
+    }
+}
+.articles { 
+    a{ 
+        margin-bottom: 3vh ;
+        width: 50%;
+        display: flex;
+        margin: 5vh auto;
+    }
+    a:hover { 
+        background: var(--bs-gradient);
+    }
+    a:active { 
+        background: var(--bs-gradient);
+    }
+    p { 
+        width: 90%;
+        text-align: center;
+        @include autoMargin();
+    }
+}
+
+.form { 
+    background: var(--bs-sun);
+    @include radius();
+    
+    h3 { 
+        margin: 5vh auto;
+    }
+    
+    button  { 
+        display: flex;
+        margin: 2vh auto;
+    }
+    button:hover { 
+        background: var(--bs-gradient);
+    }
+    button:active { 
+        background: var(--bs-gradient);
+    }
+} 
 
 
 
-@media  (min-width :220px) and (orientation:portrait) and (max-width:500px){ 
+// MEDIA QUERIES // 
+
+@media screen and (min-width:720px) { 
+    .form { 
+        @include autoMargin();
+        flex-direction: column;
+    }
+    .home article { 
+        width: 50%;
+        @include autoMargin();
+        margin-bottom: 5vh; 
+    }
+    .home::before { 
+        content:""; 
+        display: block;
+        position: absolute;
+        height: 400px;
+        width: 2px;
+        left: 18%;
+        top: 5%;
+        background: white;
+    }
+    .home::after { 
+        content:""; 
+        display: block;
+        position: absolute;
+        height: 400px;
+        width: 2px;
+        left: 82%;
+        top: 5%;
+        background: white;
+    }
+    .firstArticle { 
+        width: 60%;
+    }
+}
+
+
+
+@media  (min-width :220px) and (orientation:portrait) and (max-width:380px){ 
     .firstArticle { 
         width : 100%
     }
 }
+
