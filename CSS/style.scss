@@ -1,0 +1,141 @@
+html , body , ::after , ::before { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow-x: hidden ;
+}
+
+// MIXINS //
+
+@mixin dancingScript { 
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+@mixin radius { 
+    border-radius: 10px;
+}
+
+@mixin flexCentered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Clamp { 
+    font-size: clamp(25px , 4vw , 40px);
+}
+
+@mixin autoMargin { 
+    display: flex;
+    margin: auto;
+}
+
+// GENERAL BODY // 
+
+
+body { 
+    font-family: 'Gill Sans MT' , Calibri , 'Trebuchet MS' , sans-serif;
+    position: relative;
+    background: var(--bs-gradient);
+
+    a { 
+        text-decoration: none;
+        color:black ;
+    }
+    a:hover { 
+        color : black ; 
+    }
+}
+
+// HEADER // 
+
+header { 
+    position: relative;
+}
+
+.welcome { 
+    background: url(/IMG/welcome.jpg) center/cover;
+    height: 60vh;
+    position: relative;
+}
+
+h1 { 
+    color: black;
+    @include Clamp(); 
+    margin-top: 5vh;
+    @include dancingScript();
+}
+
+// NAVIGATION // 
+
+nav { 
+    background: var(--bs-purple);
+}
+
+.navbar-nav { 
+    overflow: hidden;
+    height: 40vh;
+}
+.navbar-toggler { 
+    position: absolute;
+    right : 15vw ; 
+    bottom: 4vh;
+}
+
+.collapse a { 
+    height: 25px;
+}
+
+// MAIN // 
+
+
+main { 
+    position: relative;
+    padding: 5vh 0 ;
+
+    h2 , h3 {
+        display: flex ;
+        justify-content: center;
+        @include Clamp() ; 
+        @include dancingScript(); 
+        margin: 7vh 0 ; 
+        padding: 5vh;
+    }
+}
+
+.firstArticle { 
+    @include radius() ; 
+    flex-direction: column;
+    background: var(--bs-sun);
+    padding: 25px 15px;
+    width: 50%;
+    display: flex;
+    margin: 2vh auto;
+
+    h3 { 
+        margin : 5% 0 ;
+    }
+    img { 
+        width: 70%;
+        @include radius(); 
+        @include autoMargin() ; 
+        margin-bottom: 3vh;
+    }
+    p { 
+        @include autoMargin();
+        text-align: center;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width :220px) and (orientation:portrait) { 
+    .firstArticle { 
+        width : 90%
+    }
+}
