@@ -69,10 +69,12 @@ h1 {
     @include autoMargin();
 }
 
+
 // NAVIGATION // 
 
 nav { 
     background: var(--bs-purple);
+    position: relative;
 }
 
 .navbar-nav { 
@@ -81,8 +83,9 @@ nav {
 }
 .navbar-toggler { 
     position: absolute;
-    right : 15vw ; 
-    bottom: 10vh;
+    right: 15vw;
+    bottom: 5vh;
+
 }
 
 .collapse a { 
@@ -176,11 +179,74 @@ main {
 .card { 
     p { 
         width: 90%;
-        text-align: center;
-        font-size: clamp(15px , 1vw , 25px);
+    text-align: center;
+    font-size: clamp(15px , 1vw , 25px);
     }
 }
 
+// EVENT INDEX PAGE //
+h4 { 
+    @include flexCentered(); 
+    @include dancingScript() ; 
+    @include Clamp()
+}
+
+h5 { 
+    @include dancingScript() ; 
+    @include Clamp() ; 
+    font-weight: bold;
+    margin-top: 25px;
+    font-style: italic;
+    text-align: center;
+    color: var(--bs-sun);
+}
+
+.events { 
+    margin: 50px 0 ; 
+    background: var(--bs-purple);
+    @include radius();
+    @include flexCentered() ; 
+}
+
+.events  { 
+    a { 
+        color: white;
+        margin: 20px 0;
+    }
+    a:hover { 
+        background: var(--bs-sun);
+        color: black; 
+    }
+    a:active { 
+        background: var(--bs-gradient);
+        color: white ;
+    }
+}
+
+.texts { 
+    font-size: clamp(15px , 1.8vw , 50px);
+    text-align: center;
+}
+
+// FOOTER // 
+
+footer{ 
+    position: static ; 
+    bottom: 0;
+    background: var(--bs-sun);
+
+    h6 { 
+        color: black;
+        @include flexCentered(); 
+        font-size: clamp(15px , 2vw , 45px);
+        @include dancingScript(); 
+        padding: 2vh 0 ;
+    }
+    .list-group { 
+        @include flexCentered(); 
+        width: 100vw;
+    }
+}
 
 
 
