@@ -46,6 +46,7 @@ h1 {
 
 nav {
   background: var(--bs-purple);
+  position: relative;
 }
 
 .navbar-nav {
@@ -56,7 +57,7 @@ nav {
 .navbar-toggler {
   position: absolute;
   right: 15vw;
-  bottom: 10vh;
+  bottom: 5vh;
 }
 
 .collapse a {
@@ -179,6 +180,103 @@ main h2, main h3 {
   width: 90%;
   text-align: center;
   font-size: clamp(15px, 1vw, 25px);
+}
+
+h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-size: clamp(25px, 4vw, 40px);
+}
+
+h5 {
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-size: clamp(25px, 4vw, 40px);
+  font-weight: bold;
+  margin-top: 25px;
+  font-style: italic;
+  text-align: center;
+  color: var(--bs-sun);
+}
+
+.events {
+  margin: 50px 0;
+  background: var(--bs-purple);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events a {
+  color: white;
+  margin: 20px 0;
+}
+
+.events a:hover {
+  background: var(--bs-sun);
+  color: black;
+}
+
+.events a:active {
+  background: var(--bs-gradient);
+  color: white;
+}
+
+.texts {
+  font-size: clamp(15px, 1.8vw, 50px);
+  text-align: center;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  background: var(--bs-sun);
+}
+
+footer h6 {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: clamp(15px, 2vw, 45px);
+  font-family: 'Dancing Script';
+  text-align: center;
+  padding: 2vh 0;
+}
+
+footer .list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
 }
 
 @media (min-width: 220px) and (orientation: portrait) and (max-width: 500px) {
