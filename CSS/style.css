@@ -1,0 +1,123 @@
+html, body, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Gill Sans MT' , Calibri , 'Trebuchet MS' , sans-serif;
+  position: relative;
+  background: var(--bs-gradient);
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+body a:hover {
+  color: black;
+}
+
+header {
+  position: relative;
+}
+
+.welcome {
+  background: url(/IMG/welcome.jpg) center/cover;
+  height: 60vh;
+  position: relative;
+}
+
+h1 {
+  color: black;
+  font-size: clamp(25px, 4vw, 40px);
+  margin-top: 5vh;
+  font-family: 'Dancing Script';
+  text-align: center;
+}
+
+nav {
+  background: var(--bs-purple);
+}
+
+.navbar-nav {
+  overflow: hidden;
+  height: 40vh;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 15vw;
+  bottom: 4vh;
+}
+
+.collapse a {
+  height: 25px;
+}
+
+main {
+  position: relative;
+  padding: 5vh 0;
+}
+
+main h2, main h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: clamp(25px, 4vw, 40px);
+  font-family: 'Dancing Script';
+  text-align: center;
+  margin: 7vh 0;
+  padding: 5vh;
+}
+
+.firstArticle {
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--bs-sun);
+  padding: 25px 15px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2vh auto;
+}
+
+.firstArticle h3 {
+  margin: 5% 0;
+}
+
+.firstArticle img {
+  width: 70%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 3vh;
+}
+
+.firstArticle p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 220px) and (orientation: portrait) {
+  .firstArticle {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
