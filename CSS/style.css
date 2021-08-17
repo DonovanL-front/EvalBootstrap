@@ -34,9 +34,14 @@ header {
 h1 {
   color: black;
   font-size: clamp(25px, 4vw, 40px);
-  margin-top: 5vh;
+  padding: 5vh 0;
+  width: 80%;
   font-family: 'Dancing Script';
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
 
 nav {
@@ -45,17 +50,18 @@ nav {
 
 .navbar-nav {
   overflow: hidden;
-  height: 40vh;
+  height: 35vh;
 }
 
 .navbar-toggler {
   position: absolute;
   right: 15vw;
-  bottom: 4vh;
+  bottom: 10vh;
 }
 
 .collapse a {
   height: 25px;
+  margin: 0 15px;
 }
 
 main {
@@ -73,8 +79,7 @@ main h2, main h3 {
   font-size: clamp(25px, 4vw, 40px);
   font-family: 'Dancing Script';
   text-align: center;
-  margin: 7vh 0;
-  padding: 5vh;
+  margin-bottom: 5vh;
 }
 
 .firstArticle {
@@ -85,7 +90,7 @@ main h2, main h3 {
           flex-direction: column;
   background: var(--bs-sun);
   padding: 25px 15px;
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,11 +118,72 @@ main h2, main h3 {
   margin: auto;
   text-align: center;
   width: 90%;
+  font-size: clamp(15px, 1vw, 25px);
 }
 
-@media screen and (min-width: 220px) and (orientation: portrait) {
+.card {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bs-sun);
+  height: 100%;
+}
+
+.card h3 {
+  font-size: clamp(25px, 4vw, 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 75%;
+  max-width: 505px;
+  margin: auto;
+}
+
+.card a {
+  margin-bottom: 5vh;
+  border: 1px solid black;
+  background: var(--bs-sun);
+  border-radius: 5px;
+  padding: 1vh 1vw;
+}
+
+.card a:hover {
+  background: var(--bs-gradient);
+  color: white;
+}
+
+.card a:active {
+  background: var(--bs-gradient);
+}
+
+.card p {
+  width: 90%;
+  text-align: center;
+  font-size: clamp(15px, 1vw, 25px);
+}
+
+@media (min-width: 220px) and (orientation: portrait) and (max-width: 500px) {
   .firstArticle {
-    width: 90%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -63,8 +63,10 @@ header {
 h1 { 
     color: black;
     @include Clamp(); 
-    margin-top: 5vh;
+    padding: 5vh 0 ;
+    width: 80%;
     @include dancingScript();
+    @include autoMargin();
 }
 
 // NAVIGATION // 
@@ -75,16 +77,17 @@ nav {
 
 .navbar-nav { 
     overflow: hidden;
-    height: 40vh;
+    height: 35vh;
 }
 .navbar-toggler { 
     position: absolute;
     right : 15vw ; 
-    bottom: 4vh;
+    bottom: 10vh;
 }
 
 .collapse a { 
     height: 25px;
+    margin: 0 15px;
 }
 
 // MAIN // 
@@ -99,17 +102,17 @@ main {
         justify-content: center;
         @include Clamp() ; 
         @include dancingScript(); 
-        margin: 7vh 0 ; 
-        padding: 5vh;
+        margin-bottom: 5vh; 
     }
 }
+// Philosophy //
 
 .firstArticle { 
     @include radius() ; 
     flex-direction: column;
     background: var(--bs-sun);
     padding: 25px 15px;
-    width: 50%;
+    width:60%;
     display: flex;
     margin: 2vh auto;
 
@@ -126,6 +129,55 @@ main {
         @include autoMargin();
         text-align: center;
         width: 90%;
+        font-size : clamp( 15px , 1vw , 25px);
+    }
+}
+
+
+// MISSIONS // 
+
+.card { 
+    @include radius(); 
+    @include flexCentered() ; 
+    background: var(--bs-sun);
+    height: 100%;
+
+    h3 { 
+        @include Clamp(); 
+        @include flexCentered() ; 
+        text-align: center;
+        margin-top: 25px;
+    }
+    img { 
+        @include radius(); 
+        width: 75% ; 
+        max-width: 505px;
+        margin: auto;
+
+    }
+}
+.card { 
+    a { 
+        margin-bottom: 5vh ;
+        border: 1px solid black ;
+        background: var(--bs-sun);
+        border-radius: 5px;
+        padding: 1vh 1vw ;
+    }
+    a:hover { 
+        background: var(--bs-gradient);
+        color: white;
+    }
+    a:active { 
+        background: var(--bs-gradient);
+    }
+}
+
+.card { 
+    p { 
+        width: 90%;
+        text-align: center;
+        font-size: clamp(15px , 1vw , 25px);
     }
 }
 
@@ -133,9 +185,8 @@ main {
 
 
 
-
-@media screen and (min-width :220px) and (orientation:portrait) { 
+@media  (min-width :220px) and (orientation:portrait) and (max-width:500px){ 
     .firstArticle { 
-        width : 90%
+        width : 100%
     }
 }
