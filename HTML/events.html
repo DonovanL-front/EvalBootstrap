@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<header>
+    <nav class="navbar fixed-top navbar-dark ">
+      <div class="container-fluid">
+        <a href="../index.html">
+          <img class="logo" src="../IMG/logoResize.png"alt="Sauve ton ainé">
+        </a>
+        <button
+         class="navbar-toggler" 
+         type="button" 
+         data-bs-toggle="collapse"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+         data-bs-target="#navbarScroll">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div 
+        class="collapse navbar-collapse"
+        id="navbarScroll">
+        <ul 
+          class="navbar-nav me-auto my-2 my-lg-0navbar-nav-scroll  overflow-hidden"
+          style="--bs-scroll-height: 150px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Nosmissions </a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html"class="nav-link">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> 
+<!-- EVENTS   -->
+<main class="event-main container-fluid">
+    <section class="row">
+      <h1>Sauve ton ainé vous propose deux conventions pour l'année 2022</h1>
+      <article class="col-xs-10 col-sm-12 col-md-5 articles">
+        <h2>Convention sur l'art de vieillir sereinement et d'être correctement accompagné</h2>
+        <img src="IMG/helpEach-others.jpg" class="help img-fluid" alt="Meeting , to give you more informations about us , and what we can do for you  " >
+        <p>Pour ces journées organisées par l'asociation nous vous acceuillons par table de 4 ou de 6 personnes celon les règles sanitaires en vigueur , 
+          elles ce déroulent tous les mardi et jeudi a partir du premier Janvier , des équipes seront organisées et un tableau répertoriant toutes les dates de tenue de ces conventions et lieu sera affiché a partir du premier Janvier sur notre site et vous sera envoyé par mail  , ces conventions ce dérouleront dans chaque département francais (les inscriptions ce feront sur cette page à l'aide du formulaire présent en bas de page (pensez a spécifier a quelle convention vous souhaitez participer ), éspérant vous voir nombreu(x)(ses)) :)  </p>
+          <a href="#form" role="button" type="button" class="btn btn-outline-dark">Réserver un créneau dans une équipe de votre département  </a>
+      </article>
+      <article class="col-xs-12 col-sm-12 col-md-5 articles">
+        <h2>Convention sur les acteurs de votre séreinité  </h2>
+        <img src="IMG/microphone-640.jpg" alt="Meeting , actors of your serenity  ">
+        <p>Pour ces convention nous nous réunissons dans de grands espaces afin de prendre une journée pour discuter et rencontrer chaque acteur important de vos régions et départements respectifs nous vivons dans un Pays rempli de perles rares lorsqu'il s'agit d'entraide mais souvent les bonnes informations ne sont pas relayées et c'est un problème pour nous afin de vous accompagner au mieux il est important d'avoir les bonnes cartes en main pour avancer sereinement,  n'hésitez pas a remplir le formulaire si dessous en nous spécifiant  quelle convention vous souhaitez être présents     </p>
+          <a href="#form" role="button" type="button" class="btn btn-outline-dark">Réserver un créneau dans une équipe </a>
+      </article>
+      
+ </section>
+ <section class="row" id="form">
+    <form method="#"  class="form col-xs-12 col-sm-12 col-md-6" >
+      <h2>Choisissez votre activitée parmis celles qui vous sont proposées pour le mois de Janvier</h2> 
+      <p>
+        <em>
+          en remplissant ce petit formulaire de participation et en spécifiant a quelle convention vous souhaitez assister si vous souhaitez participer aux deux aucun soucis
+        </em>
+      </p> 
+    <div class="form-floating">
+      <select class="form-select form-select-sm mb-3"  role="button" aria-label="default select example">
+        <option value="1">Convention Ain sur (Oyonnax les 1 et 2 Janvier)</option>
+        <option value="2">Convention Aisne(Gauchy le 4 et 5 Janvier)  </option>
+        <option value="3">Convention Allier   ( Cusset 6 et 7 Janvier)</option>
+        <option value="4">Convention Alpes-de-Haute-Provence ( Sisteron le 8 et 9 Janvier) </option>
+        <option value="5">Convention Hautes-Alpes (Gap le 12 et 13 Janvier</option>
+        <option value="6">Convention Alpes-Maritimes ( Antibes le 15 et 16 Janvier)</option>
+        <option value="7">Convention Ardeche ( Aubenas le 18 et 19 Janvier)</option>
+        <option value="8">Convention  Ardennes  (Aiglemont le 21 et 22 Janvier)</option>
+      </select>
+    </div>
+    <select class="form-select form-select-sm mb-3" aria-label="Default select example" role="button" id="convention" aria-placeholder="Sélectionnez la(es) conventions désirées">
+      <option value="1">Art de vieillir sereinement</option>
+      <option value="2">Les acteurs de votre séreinité</option>
+      <option value="3">Aux deux très cher :) </option>
+    </select>
+    <div>
+     <div class="d-flex justify-content-around">
+       <div class="mb-3 col-lg-5 col-sm-12">
+         <input type="text" class="form-control" role="contentinfo" placeholder="Entrez votre nom" required>
+       </div>
+       <div class="mb-3 col-lg-5 col-sm-12">
+         <input type="text" class="form-control" role="contentinfo" placeholder="Entrez votre prénom"  required>
+       </div>
+
+     </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="2" role="contentinfo" placeholder="Commentaires si besoin (réponse sous deux jours ouvrés"></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" role="checkbox" class="form-check-input" checked required>
+        <label class="form-check-label">Valider</label>
+      </div>
+      <button type="button" class="btn btn-outline-dark " data-bs-toggle="modal" data-bs-target="#modal">
+        Valider
+      </button>
+      <div class="modal fade" id="modal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">!Oops l'année 2022 n'a pas encore commencé les inscriptions ouvrent le 1er Janvier a très vite :)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+ </section>
+</main>
+<!-- FOOTER -->
+<footer>
+    <h3 class="row">
+      Tous droits réserves a l'association sauve ton ainé &reg
+    </h3>  
+    <ul class="list-group list-unstyled">
+      <li class="list-item"> <a href="index.html">Acceuil</a> </li>
+      <li class="list-item"> <a href="index.html">Nos missions</a> </li>
+      <li class="list-item"> <a href="#event">Nos évenements <a> </li>
+    </ul>
+  </footer>
+</body>
+</html>
