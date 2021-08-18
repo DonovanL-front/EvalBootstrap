@@ -79,7 +79,8 @@ nav {
 
 .navbar-nav { 
     overflow: hidden;
-    height: 35vh;
+    height:auto;
+    padding-bottom: 1vh;
 }
 .navbar-toggler { 
     position: absolute;
@@ -91,6 +92,7 @@ nav {
 .collapse a { 
     height: 25px;
     margin: 0 15px;
+    width: 90%;
 }
 
 // MAIN // 
@@ -177,17 +179,19 @@ main {
 
 .card { 
     p { 
-        width: 90%;
+    width: 90%;
     text-align: center;
+    margin: 1vh auto;
     font-size: clamp(15px , 1vw , 25px);
     }
 }
 
-// EVENT INDEX PAGE //
+// EVENTS INDEX //
 h4 { 
     @include flexCentered(); 
     @include dancingScript() ; 
-    @include Clamp()
+    @include Clamp() ; 
+    margin: 2vh auto
 }
 
 h5 { 
@@ -223,7 +227,7 @@ h5 {
 }
 
 .texts { 
-    font-size: clamp(15px , 1.8vw , 50px);
+    font-size: clamp(18px , 1.8vw , 50px);
     text-align: center;
 }
 
@@ -296,10 +300,10 @@ footer{
 }
 .articles { 
     a{ 
-        margin-bottom: 3vh ;
-        width: 50%;
+        width: 40%;
         display: flex;
-        margin: 5vh auto;
+        margin: 3vh auto;
+        justify-content: center;
     }
     a:hover { 
         background: var(--bs-gradient);
@@ -332,16 +336,25 @@ footer{
     button:active { 
         background: var(--bs-gradient);
     }
+    label { 
+        opacity: 0;
+    }
 } 
 
 
 
 // MEDIA QUERIES // 
 
-@media screen and (min-width:720px) { 
+@media screen and (min-width:768px) { 
     .form { 
         @include autoMargin();
         flex-direction: column;
+        .controls { 
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        
     }
     .home article { 
         width: 50%;
@@ -371,13 +384,13 @@ footer{
     .firstArticle { 
         width: 60%;
     }
-}
-
-
-
-@media  (min-width :220px) and (orientation:portrait) and (max-width:380px){ 
-    .firstArticle { 
-        width : 100%
+    .events { 
+        width: 80%;
+        @include autoMargin()
     }
 }
+
+
+
+
 
