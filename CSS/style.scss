@@ -172,6 +172,11 @@ main {
     }
     a:active { 
         background: var(--bs-gradient);
+
+    }
+    a:focus { 
+        background: var(--bs-gradient);
+
     }
 }
 

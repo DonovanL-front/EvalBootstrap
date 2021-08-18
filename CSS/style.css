@@ -175,6 +175,10 @@ main h2, main h3 {
   background: var(--bs-gradient);
 }
 
+.card a:focus {
+  background: var(--bs-gradient);
+}
+
 .card p {
   width: 90%;
   text-align: center;
