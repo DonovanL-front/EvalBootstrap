@@ -79,7 +79,6 @@ nav {
 
 .navbar-nav { 
     overflow: hidden;
-    height:auto;
     padding-bottom: 1vh;
 }
 .navbar-toggler { 
@@ -92,7 +91,6 @@ nav {
 .collapse a { 
     height: 25px;
     margin: 0 15px;
-    width: 90%;
 }
 
 // MAIN // 
@@ -326,20 +324,33 @@ footer{
         margin: 5vh auto;
     }
     
-    button  { 
-        display: flex;
-        margin: 2vh auto;
-    }
-    button:hover { 
-        background: var(--bs-gradient);
-    }
-    button:active { 
-        background: var(--bs-gradient);
-    }
+} 
+.modal { 
+    background: var(--bs-gradient);
+}
+.modal-title { 
+    color: black;
+}
+
+.form {
+button  { 
+    display: flex;
+    margin: 2vh auto;
+}
+button:hover { 
+    background: var(--bs-gradient);
+    
+}
+button:active { 
+    background: var(--bs-gradient);
+}
+}
+
+.controls { 
     label { 
         opacity: 0;
     }
-} 
+}
 
 
 

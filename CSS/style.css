@@ -51,7 +51,6 @@ nav {
 
 .navbar-nav {
   overflow: hidden;
-  height: auto;
   padding-bottom: 1vh;
 }
 
@@ -64,7 +63,6 @@ nav {
 .collapse a {
   height: 25px;
   margin: 0 15px;
-  width: 90%;
 }
 
 main {
@@ -394,6 +392,14 @@ footer .list-group {
   margin: 5vh auto;
 }
 
+.modal {
+  background: var(--bs-gradient);
+}
+
+.modal-title {
+  color: black;
+}
+
 .form button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,7 +415,7 @@ footer .list-group {
   background: var(--bs-gradient);
 }
 
-.form label {
+.controls label {
   opacity: 0;
 }
 
